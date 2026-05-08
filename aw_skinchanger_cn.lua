@@ -29,7 +29,7 @@ end
 
 local client_base = ffi.cast("uintptr_t", mem.GetModuleBase("client.dll"))
 
-local CES = ffi.cast("uintptr_t*", client_base + 0x24D1DF0)[0]
+local CES = ffi.cast("uintptr_t*", client_base + 0x24D0DC0)[0]
 
 local function GetEntityInstance(idx)
     if idx <= 0 or idx > 0x7fff then return nil end
